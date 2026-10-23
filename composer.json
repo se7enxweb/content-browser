@@ -1,5 +1,5 @@
 {
-    "name": "netgen/content-browser",
+    "name": "se7enxweb/content-browser",
     "description": "Netgen Content Browser is a Symfony bundle that provides an interface which selects items from any kind of backend and returns the IDs of selected items back to the calling code.",
     "license": "MIT",
     "type": "symfony-bundle",
@@ -9,8 +9,11 @@
             "homepage": "https://netgen.io"
         }
     ],
+    "replace": {
+        "netgen/content-browser": "self.version"
+    },
     "require": {
-        "php": "^7.4 || ^8.1",
+        "php": "^7.4 || ^8.0",
         "ext-mbstring": "*",
         "netgen/content-browser-ui": "~1.4.0",
         "symfony/asset": "^3.4.47 || ^5.4 || ^6.2",
